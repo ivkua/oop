@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         IdPrinter[] idPrinters = new IdPrinter[100];
         for (int i = 0; i < idPrinters.length; i++) {
-            IdPrinter idPrinter = new IdPrinter(i);
+            IdPrinter idPrinter = new IdPrinter();
             idPrinters[i] = idPrinter;
             idPrinter.start();
         }
