@@ -1,9 +1,10 @@
 package org.ivkua.lesson5.task1;
-/*1. Модифицировать проект FindFiles так, чтобы программа искала в каталоге
-все файлы с расширениями из списка.*/
 
 import java.io.File;
 import java.util.Scanner;
+
+/*1. Модифицировать проект FindFiles так, чтобы программа искала в каталоге
+все файлы с расширениями из списка.*/
 
 public class Main {
     public static void main(String[] args) {
