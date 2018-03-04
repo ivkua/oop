@@ -22,6 +22,10 @@ public class FileSearcher {
             throw new IllegalArgumentException("Directory wasn't find");
         }
 
+        search(file);
+    }
+
+    private void search(File file) {
         String[] filteredList = file.list(filterMore5);
         if (filteredList != null) {
             for (String element : filteredList) {
@@ -32,7 +36,7 @@ public class FileSearcher {
         File[] directories = file.listFiles(directoryFilter);
         if (directories != null) {
             for (File directory : directories) {
-                search(directory.getPath());
+                search(directory);
             }
         }
     }
