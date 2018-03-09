@@ -31,13 +31,13 @@ public class SamsungS4 extends Phone {
     @Override
     public void call(String number) {
         System.out.println("SamsungS4 class is calling to " + number);
-        counterCalls++;
+        setCounterCalls();
     }
 
     @Override
     public void sendSMS(String number, String message) {
         String adding = "Hello! ";
         System.out.println("SamsungS4 class is sending sms " + adding + message + " to " + number);
-        counterSms++;
+        setCounterSms();
     }
 }

@@ -9,9 +9,20 @@ public class Main {
         SamsungS4 samsungS4 = new SamsungS4();
         samsungS4.call("0957489848");
         samsungS4.call("0444577484");
+        samsungS4.call("0444577484");
         samsungS4.sendSMS("0674588475", "WIll we meet?");
-        System.out.println("There were: " + samsungS4.getCounterCalls() + " calls");
-        System.out.println("There were: " + samsungS4.getCounterSms() + " sms");
+        System.out.println("SamsungS4 made " + samsungS4.getCounterCalls() + " calls");
+        System.out.println("SamsungS4 sent " + samsungS4.getCounterSms() + " sms");
+        System.out.println();
+
+        IPhone5 iPhone5 = new IPhone5();
+        iPhone5.call("0957489848");
+        iPhone5.call("0504898476");
+        iPhone5.call("0504898476");
+        iPhone5.call("0504898476");
+        iPhone5.sendSMS("0674588475", "WIll we meet?");
+        System.out.println("iPhone5 made " + iPhone5.getCounterCalls() + " calls");
+        System.out.println("iPhone5 sent " + iPhone5.getCounterSms() + " sms");
 
     }
 }
