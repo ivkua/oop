@@ -28,16 +28,12 @@ public class SamsungS4 extends Phone {
             }
     }
 
-    @Override
-    public void call(String number) {
+    protected void processCall(String number) {
         System.out.println("SamsungS4 class is calling to " + number);
-        setCounterCalls();
     }
 
-    @Override
-    public void sendSMS(String number, String message) {
+    protected void processSms(String number, String message) {
         String adding = "Hello! ";
         System.out.println("SamsungS4 class is sending sms " + adding + message + " to " + number);
-        setCounterSms();
     }
 }

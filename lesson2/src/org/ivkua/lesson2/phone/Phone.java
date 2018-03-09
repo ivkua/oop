@@ -31,18 +31,18 @@ public abstract class Phone {
         return counterCalls;
     }
 
-    public void call(String number) {
-        System.out.println("Phone class is calling " + number);
-        setCounterCalls();
-    }
-
-    public abstract void sendSMS(String number, String message);
-
-    public void setCounterSms(){
-        counterSms++;
-    }
-
-    public void setCounterCalls(){
+    public final void call(String number) {
         counterCalls++;
+        processCall(number);
     }
+
+    protected abstract void processCall(String number);
+
+    public final void sendSMS(String number, String message){
+        counterSms++;
+        processSms(number, message);
+    }
+
+    protected abstract void processSms(String number, String message);
+
 }

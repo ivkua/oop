@@ -7,9 +7,11 @@ public class IPhone5 extends IPhone{
         imei = "1111111";
     }
 
-    @Override
-    public void sendSMS(String number, String message) {
+    protected void processCall(String number) {
+        System.out.println("IPhone5 class is calling " + number);
+    }
+
+    protected void processSms(String number, String message) {
         System.out.println("IPhone5 class is sending sms " + message + " to " + number);
-        setCounterSms();
     }
 }

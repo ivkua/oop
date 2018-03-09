@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         SamsungS4 samsungS4 = new SamsungS4();
         samsungS4.call("0957489848");
-        samsungS4.call("0444577484");
+        samsungS4.call("0504564846");
         samsungS4.call("0444577484");
         samsungS4.sendSMS("0674588475", "WIll we meet?");
         System.out.println("SamsungS4 made " + samsungS4.getCounterCalls() + " calls");
@@ -20,7 +20,7 @@ public class Main {
         iPhone5.call("0504898476");
         iPhone5.call("0504898476");
         iPhone5.call("0504898476");
-        iPhone5.sendSMS("0674588475", "WIll we meet?");
+        iPhone5.sendSMS("0674588475", "We meet");
         System.out.println("iPhone5 made " + iPhone5.getCounterCalls() + " calls");
         System.out.println("iPhone5 sent " + iPhone5.getCounterSms() + " sms");
 

@@ -7,14 +7,12 @@ public class Nokia3310 extends Phone {
         hasWifi = false;
         screenSize = 2;
     }
-    @Override
-    public void call(String number) {
-        super.call(number);
+
+    protected void processCall(String number) {
         System.out.println("Nokia3310 class is calling " + number);
     }
-    @Override
-    public void sendSMS(String number, String message) {
+
+    protected void processSms(String number, String message) {
         System.out.println("Nokia3310 class is sending sms " + message + " to " + number);
-        setCounterSms();
     }
 }

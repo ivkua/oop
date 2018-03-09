@@ -8,14 +8,12 @@ public class IPhone extends Phone {
         hasWifi = true;
         screenSize = 3;
     }
-    @Override
-    final public void call(String number) {
+
+    protected void processCall(String number) {
         System.out.println("IPhone class is calling " + number);
-        setCounterCalls();
     }
-    @Override
-    public void sendSMS(String number, String message) {
+
+    protected void processSms(String number, String message) {
         System.out.println("IPhone class is sending sms " + message + " to " + number);
-        setCounterSms();
     }
 }
