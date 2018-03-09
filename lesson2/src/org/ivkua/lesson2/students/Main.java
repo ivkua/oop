@@ -1,4 +1,4 @@
-package org.ivkua.lesson2.Students;
+package org.ivkua.lesson2.students;
 
 import java.time.LocalDate;
 import java.time.Month;
